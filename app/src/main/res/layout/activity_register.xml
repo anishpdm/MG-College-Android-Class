@@ -1,0 +1,138 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/myBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <TextView
+        android:text="@string/myapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+<TextView
+    android:id="@+id/nametext"
+    android:text="NAME"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_below="@+id/nametext"
+        android:id="@+id/nameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/rolltext"
+        android:layout_below="@+id/nameedit"
+        android:text="ROLL NO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/rolledit"
+        android:layout_below="@+id/rolltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/admnotext"
+        android:layout_below="@+id/rolledit"
+        android:text="ADMISSION NO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/admnoedit"
+        android:layout_below="@+id/admnotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/collegetext"
+        android:layout_below="@+id/admnoedit"
+        android:text="COLLEGE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/collegedit"
+        android:layout_below="@+id/collegetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/usertext"
+        android:layout_below="@+id/collegedit"
+        android:text="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/usernameedit"
+        android:layout_below="@+id/usertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/passtext"
+        android:layout_below="@+id/usernameedit"
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/passedit"
+        android:layout_below="@+id/passtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/confirmpasstext"
+        android:layout_below="@+id/passedit"
+        android:text="Confirm Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/confirmpassedit"
+        android:layout_below="@+id/confirmpasstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_below="@+id/confirmpassedit"
+        android:id="@+id/registerbutton"
+        android:text="REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@+id/registerbutton"
+        android:id="@+id/backtologinbutton"
+        android:text="GO TO LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

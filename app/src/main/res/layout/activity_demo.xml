@@ -1,0 +1,55 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <EditText
+        android:hint="Enter the Name"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readname"/>
+
+    <EditText
+        android:hint="Enter the Roll Number"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readrollno"/>
+
+    <EditText
+        android:hint="Enter the Admission Number"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readadmno"/>
+
+    <EditText
+        android:hint="Enter the College"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readcollege"/>
+
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:textColor="#FFFFFF"
+        android:background="#EB6B38"
+        android:layout_margin="25dp"
+        android:text="SUBMIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+</LinearLayout>
