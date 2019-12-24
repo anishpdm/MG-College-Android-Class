@@ -2,4 +2,14 @@
     <string name="app_name">MG College App</string>
 
     <string name="myapp"> My College App KANNUR </string>
+
+    <string-array name="district">
+
+        <item>Kannur</item>
+        <item>Kozhikode</item>
+        <item>Trivandrum</item>
+
+
+    </string-array>
+
 </resources>

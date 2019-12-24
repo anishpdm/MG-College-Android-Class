@@ -6,36 +6,46 @@
 
 
     <EditText
-        android:hint="Enter the Name"
+        android:hint="Enter the Course Title"
         android:layout_margin="25dp"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/readname"/>
+        android:id="@+id/readcourse"/>
 
     <EditText
-        android:hint="Enter the Roll Number"
+        android:hint="Enter the Course Description"
         android:layout_margin="25dp"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/readrollno"/>
+        android:id="@+id/readcoursedescription"/>
 
     <EditText
-        android:hint="Enter the Admission Number"
+        android:hint="Enter the Duration"
         android:layout_margin="25dp"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/readadmno"/>
+        android:id="@+id/readduration"/>
 
     <EditText
-        android:hint="Enter the College"
+        android:hint="Enter the Venue"
         android:layout_margin="25dp"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/readcollege"/>
+        android:id="@+id/readvenue"/>
+
+    <EditText
+        android:hint="Enter the Date"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readDate"/>
+
+
 
     <Button
         android:id="@+id/buttonsubmit"
@@ -45,6 +55,16 @@
         android:text="SUBMIT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/pb"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
 
 
 

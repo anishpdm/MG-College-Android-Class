@@ -3,6 +3,7 @@ package com.example.mgcollegeapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     EditText ed1,ed2;
-    Button button,button2,button3;
+    Button button,button2,button3,button4;
     String getUname,getPassword;
 
 
@@ -24,11 +25,29 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        SharedPreferences preferences=getSharedPreferences("login",MODE_PRIVATE);
+        String value= preferences.getString("username",null);
+
+        if(value!=null)
+        {
+            Intent intent = new Intent(getApplicationContext(),WelcomeActivity.class);
+            startActivity(intent);
+        }
+
         ed1=(EditText)findViewById(R.id.uname);
         ed2=(EditText)findViewById(R.id.password);
         button=(Button)findViewById(R.id.loginbutton);
         button2=(Button)findViewById(R.id.regbutton);
         button3=(Button)findViewById(R.id.demobutton);
+        button4=(Button)findViewById(R.id.demobuttonView);
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ViewallActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         button3.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +80,12 @@ button2.setOnClickListener(new View.OnClickListener() {
             Log.d("username",getUname);
             Log.d("pass",getPassword);
 
-            if(getUname.equals("admin")&&getPassword.equals("12345")){
+            if(getUname.equals("mgcollege")&&getPassword.equals("12345"))
+            {
+                SharedPreferences.Editor editor=getSharedPreferences("login",MODE_PRIVATE).edit();
+                editor.putString("username",getUname);
+                editor.commit();
+
                 Intent intent = new Intent(getApplicationContext(),WelcomeActivity.class);
                 startActivity(intent);
             }
