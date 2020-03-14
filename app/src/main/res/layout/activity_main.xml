@@ -1,111 +1,140 @@
-<LinearLayout android:layout_height="match_parent"
+<ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@drawable/mybackground"
-    android:orientation="vertical"
-    android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-<ImageView
-    android:src="@drawable/embx"
-    android:background="@drawable/circle"
-    android:layout_width="100dp"
-    android:layout_height="100dp"/>
-
-    <TextView
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/mybackground"
+        android:orientation="vertical"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="@color/white"
-        android:text="@string/myapp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:visibility="invisible"
-        android:text="Username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:drawablePadding="15dp"
-
-        android:drawableLeft="@drawable/ic_account_box_black_24dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_marginTop="30dp"
-        android:hint="Enter the Username"
-        android:id="@+id/uname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:visibility="invisible"
-        android:text="Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:drawablePadding="15dp"
-        android:drawableLeft="@drawable/ic_remove_red_eye_black_24dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:hint="Enter the Password"
-        android:id="@+id/password"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/buttonstyle"
-        android:id="@+id/loginbutton"
-        android:text="LOGIN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/buttonstyle"
-
-        android:id="@+id/regbutton"
-        android:text="NEW USERS CLICK HERE"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <Button
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/buttonstyle"
-        android:id="@+id/demobutton"
-        android:text="DEMO"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/embx"
+            android:background="@drawable/circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
 
-    <Button
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/buttonstyle"
-        android:id="@+id/demobuttonView"
-        android:text="DEMO View All"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:text="@string/myapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="invisible"
+            android:text="Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</LinearLayout>
+        <EditText
+            android:drawablePadding="15dp"
+
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="30dp"
+            android:hint="Enter the Username"
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="invisible"
+            android:text="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_remove_red_eye_black_24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter the Password"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/loginbutton"
+            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+
+            android:id="@+id/regbutton"
+            android:text="NEW USERS CLICK HERE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/demobutton"
+            android:text="DEMO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/demobuttonView"
+            android:text="DEMO View All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/Smenu"
+            android:text="Student Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/Splay"
+            android:text="Play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

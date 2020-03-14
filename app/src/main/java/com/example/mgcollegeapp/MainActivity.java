@@ -1,5 +1,6 @@
 package com.example.mgcollegeapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,12 +12,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+
+
 public class MainActivity extends AppCompatActivity {
 
 
     EditText ed1,ed2;
-    Button button,button2,button3,button4;
+    Button button,button2,button3,button4,button5,button6;
     String getUname,getPassword;
+
+
 
 
     @Override
@@ -24,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+
+
 
         SharedPreferences preferences=getSharedPreferences("login",MODE_PRIVATE);
         String value= preferences.getString("username",null);
@@ -40,6 +50,27 @@ public class MainActivity extends AppCompatActivity {
         button2=(Button)findViewById(R.id.regbutton);
         button3=(Button)findViewById(R.id.demobutton);
         button4=(Button)findViewById(R.id.demobuttonView);
+        button5=(Button)findViewById(R.id.Smenu);
+        button6=(Button)findViewById(R.id.Splay);
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(),PlayActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),StudentMenuActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +107,9 @@ button2.setOnClickListener(new View.OnClickListener() {
 
             getUname=ed1.getText().toString();
             getPassword=ed2.getText().toString();
+
+
+
 
             Log.d("username",getUname);
             Log.d("pass",getPassword);

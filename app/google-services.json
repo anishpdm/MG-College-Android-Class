@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "720450649605",
+    "firebase_url": "https://mg-college-app.firebaseio.com",
+    "project_id": "mg-college-app",
+    "storage_bucket": "mg-college-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720450649605:android:d1ca8431935296e52de66c",
+        "android_client_info": {
+          "package_name": "com.example.mgcollegeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720450649605-0942s4p394dls0146b2jok77nai1s6g3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mgcollegeapp",
+            "certificate_hash": "99578aab06f278a5bfbef10f0552af2aa167cbdf"
+          }
+        },
+        {
+          "client_id": "720450649605-1f538ugn4kknjnc8hpaabsdi6vusk6c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSHI_i1jdBMS9EkqNQpGJHBFLWoutqOoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720450649605-1f538ugn4kknjnc8hpaabsdi6vusk6c7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

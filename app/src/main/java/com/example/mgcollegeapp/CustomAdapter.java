@@ -54,6 +54,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         return my_List.size();
     }
 
+
+
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tv1,tv2,tv3,tv4,tv5;
 

@@ -58,7 +58,7 @@ String ApiUrl="https://dummyapilist.herokuapp.com/getcourses";
                 public void onResponse(String response) {
 
 //                    Log.d("ViewAll",response);
-                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
                     try {
                         JSONArray jsonArray=new JSONArray(response);
 
@@ -74,6 +74,8 @@ String ApiUrl="https://dummyapilist.herokuapp.com/getcourses";
 
                             CourseModel model = new CourseModel(courseTitle, courseDescription, courseDuration, courseDate,courseVenue);
                             my_List.add(model);
+
+
                         }
 
                         adapter = new CustomAdapter(my_List, getApplicationContext());

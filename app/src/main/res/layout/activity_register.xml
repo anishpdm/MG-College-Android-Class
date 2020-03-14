@@ -78,13 +78,13 @@
     <TextView
         android:id="@+id/usertext"
         android:layout_below="@+id/collegedit"
-        android:text="Username"
+        android:text="Email Id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
     <EditText
-        android:id="@+id/usernameedit"
+        android:id="@+id/useremail"
         android:layout_below="@+id/usertext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -92,7 +92,7 @@
 
     <TextView
         android:id="@+id/passtext"
-        android:layout_below="@+id/usernameedit"
+        android:layout_below="@+id/useremail"
         android:text="Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

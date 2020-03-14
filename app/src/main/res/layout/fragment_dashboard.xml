@@ -1,0 +1,78 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <EditText
+        android:hint="Enter the Student Name"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sname"/>
+
+    <EditText
+        android:hint="Enter the Student Rollno"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/srollno"/>
+
+    <EditText
+        android:hint="Enter the Student Admno"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sadmno"/>
+
+    <EditText
+        android:hint="Enter the Student College"
+        android:layout_margin="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scollege"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonImageUpload"
+        android:textColor="#FFFFFF"
+        android:background="#9C27B0"
+        android:layout_margin="25dp"
+        android:text="Upload Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonsubmitstudent"
+        android:textColor="#FFFFFF"
+        android:background="#9C27B0"
+        android:layout_margin="15dp"
+        android:text="SUBMIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--    <ProgressBar-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:id="@+id/pb"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+
+
+
+
+
+
+
+
+</LinearLayout>
